@@ -66,16 +66,16 @@ Code example
 Experience
 ----------------------------------------
 
-Layout of several landing pages;
+* Layout of several landing pages;
 
-Studying information on the different sources like javascript.info;
+* Studying information on the different sources like [javascript.info](https://javascript.info/);
 
-Self-training and working with JS operators, cycles, functions, arrays, objects, implementation of sorting 
+* Self-training and working with JS operators, cycles, functions, arrays, objects, implementation of sorting 
 algorithms, etc.
 
-Classes and training with friends who work as Front End Developers;
+* Classes and training with friends who work as Front End Developers;
 
-Documentation and specification.
+* Documentation and specification.
 
 
 Education
