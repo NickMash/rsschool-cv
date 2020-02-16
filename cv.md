@@ -33,11 +33,57 @@ Skills
 Code example
 --------------------
 
+**This is case-insensitive sorting of object by properties (JavaScript sort() method):**
+
+    let peopleBase = [
+        {FirstName: "John", LastName: "Jackson",},
+        {FirstName: "Jack", LastName: "anderson",},
+        {FirstName: "frodo", LastName: "Bagins",},
+        {FirstName: "Sam", LastName: "Torbins",},
+        ];
+
+    const by = field => {
+        const fieldComparison = (a, b) => {
+
+            let as = a[field].toLowerCase();
+            let bs = b[field].toLowerCase();
+
+            if (as > bs) return 1;
+            if (as < bs) return -1;
+
+            return 0;
+
+        };
+        return fieldComparison;
+    };
+
+      arr = peopleBase.sort(by("FirstName")); //Sorting can be done by "first name" or "last name".
+
+
+      console.log(arr);
+
+
 Experience
 ----------------------------------------
 
+Layout of several landing pages;
+
+Studying information on the different sources like javascript.info;
+
+Self-training and working with JS operators, cycles, functions, arrays, objects, implementation of sorting 
+algorithms, etc.
+
+Classes and training with friends who work as Front End Developers;
+
+Documentation and specification.
+
+
 Education
 ----------------------------------------
+I am a graduate of the Belarusian National Technical University of Power Plants faculty. Specialty - Power plants, qualified as power engineer. Graduated in 2013.
+
 
 English
 ----------------------------------------
+
+I also underwent retraining at The State Educational Institution "Academy of Postgraduate Education" in the specialty "Modern Foreign Language" (indicating the type of a professional activity)" with the conferred qualification of “Translator, Foreign Language Assistant”. Also graduated in 2013. The approximate level of the language at the moment is A2-B1.
