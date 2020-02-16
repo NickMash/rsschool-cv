@@ -1,0 +1,313 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(../images/main_background.jpg) scroll;
+    background-size: cover;
+}
+
+@font-face{
+    font-family: 'RadcliffeDisplay-Bold';
+    src: url(../fonts/RadcliffeDisplay-Bold/RadcliffeDisplay-Bold.eot);
+    src: url(../fonts/RadcliffeDisplay-Bold/RadcliffeDisplay-Bold.eot?iefix) format('eot'),
+    url(../fonts/RadcliffeDisplay-Bold/RadcliffeDisplay-Bold.woff) format('woff'),
+    url(../fonts/RadcliffeDisplay-Bold/RadcliffeDisplay-Bold.ttf) format('truetype'),
+    url(../fonts/RadcliffeDisplay-Bold/RadcliffeDisplay-Bold.svg#webfont) format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.resume__container {
+    max-width: 1024px;
+    margin: 50px auto;
+    border-right: 4px solid #a08c7d;
+    border-bottom: 4px solid #a08c7d;
+    box-shadow: 40px 40px 100px 70px rgba(0,0,0,0.6);
+}
+
+.resume__header {
+    padding: 35px 55px;
+    background-image: url(../images/header_background.jpg);
+    background-size: cover;
+
+    overflow: hidden;
+}
+
+.header__top-line {
+    height: 25px;
+    background-image: url(../images/uper_red_line.jpg);
+    background-size: cover;
+}
+
+.header__section {
+    display: inline-block;
+}
+
+.header__section:last-child {
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+}
+
+.header__title {
+    font-size: 500%;
+    font-family: RadcliffeDisplay-Bold, serif;
+    color: #5b5061;
+}
+
+.header__description {
+    letter-spacing: 15px;
+    color: #5b5061;
+    text-indent: 0px;
+    font-family: Arial, serif;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.header__bottom-line {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.header__image {
+    display: block;
+    float: right;
+    background: url(../images/photo_portrait.jpg);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    margin: 8%;
+    position: relative;
+    border-radius: 50%;
+    -webkit-transition: all 0.15s ease;
+    -moz-transition: all 0.15s ease;
+    -o-transition: all 0.15s ease;
+    transition: all 0.15s ease;
+}
+
+.header__image:hover {
+    width: 205px;
+    height: 205px;
+}
+
+.header__round-moving-line {
+    position: absolute;
+    top: -8.2%;
+    left: -8.2%;
+    width: 230px;
+    height: 230px;
+    border: 2px dotted #5b5061;
+    border-radius: 50%;
+    background-size: 230px 230px;
+    -webkit-transition: all 0.15s ease;
+    -moz-transition: all 0.15s ease;
+    -o-transition: all 0.15s ease;
+    transition: all 0.15s ease;
+    animation: spin 140s linear 0s infinite;
+}
+
+.header__round-moving-line:hover {
+    width: 235px;
+    height: 235px;
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+.main__contact {
+    background-image: url(../images/contacts_background.jpg);
+    background-size: cover;
+    padding: 20px;
+}
+
+.contact__section {
+    display: inline-block;
+    width: calc((100% - 20px)/ 3);
+}
+
+.contact__icon_phone,
+.contact__icon_email,
+.contact__icon_social {
+    display: inline-block;
+    height: 32px;
+    width: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+}
+
+.contact__icon_phone:hover {
+height: 39px;
+width: 39px;
+transform: rotate(45deg);
+}
+
+.contact__icon_email:hover {
+height: 39px;
+width: 44px;
+}
+
+.contact__icon_social:hover {
+    height: 39px;
+    width: 39px;
+}
+
+.contact__icon_phone {
+    background-image: url(../images/phone_icon.png);
+}
+
+.contact__icon_email {
+    background-image: url(../images/email_icon.png);
+}
+
+.contact__icon_social {
+    background-image: url(../images/github_icon.png);
+}
+
+.contact__name_phone,
+.contact__name_email,
+.contact__name_social {
+    display: inline-block;
+    vertical-align: middle;
+    color: #e99f84;
+    font-family: Arial, serif;
+    font-weight: bold;
+
+    -webkit-transition: all 0.05s ease;
+    -moz-transition: all 0.05s ease;
+    -o-transition: all 0.05s ease;
+    transition: all 0.05s ease;
+}
+
+.contact__description_phone,
+.contact__description_email,
+.contact__description_social {
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, serif;
+
+    -webkit-transition: all 0.05s ease;
+    -moz-transition: all 0.05s ease;
+    -o-transition: all 0.05s ease;
+    transition: all 0.05s ease;
+}
+
+.contact__description_phone:hover,
+.contact__description_email:hover,
+.contact__description_social:hover {
+    text-decoration: underline;
+}
+
+.main__section {
+    background-color: #e7e7e9;
+}
+
+.section__titles {
+    width: 250px;
+    background-image: url(../images/aside_background.jpg);
+    display: table-cell;
+    vertical-align: middle;
+    background-size: cover;
+    height: 100%;
+    text-align: center;
+    border-right: 6px solid #e59d84;
+
+    position: relative;
+}
+
+.section__titles:after {
+    content: '';
+    display: block;
+    background-image: url(../images/arrow_pointer.png);
+    height: 48px;
+    width: 30px;
+    background-size: cover;
+
+    position: absolute;
+    right: -30px;
+    top: 40%;
+}
+
+.section__description {
+    vertical-align: middle;
+    text-align: justify;
+    display: table-cell;
+    background-color: #e7e7e9;
+    background-size: cover;
+    padding: 4%;
+}
+
+.section__icon {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    margin: 0 auto;
+}
+
+.section__icon_summary {
+    background-image: url(../images/summary_icon.png);
+}
+
+.section__icon_skills {
+    background-image: url(../images/skills_icon.png);
+}
+
+.section__icon_code-example {
+    background-image: url(../images/code_example_icon.png);
+}
+
+.section__icon_experience {
+    background-image: url(../images/experience_icon.png);
+}
+
+.section__icon_education {
+    background-image: url(../images/education_icon.png);
+}
+
+.section__icon_english {
+    background-image: url(../images/english_icon.png);
+}
+
+.section__name {
+    display: inline-block;
+    font-family: RadcliffeDisplay-Bold, serif;
+    font-size: 140%;
+    color: #5b5061;
+    font-weight: bold;
+    border-bottom: 3px #5b5061 solid;
+    padding: 20px 0 0 0;
+}
+
+.section__subname {
+    font-family: Calibri, serif;
+    font-size: 123%;
+    color: #5b5061;
+    padding-top: 10px;
+}
+
+.section__description {
+    font-size: 18px;
+    font-family: Calibri, serif;
+    color: #5b5061;
+    line-height: 1.7;
+    border-bottom: 2px #96909c dashed;
+    font-weight: bold;
+}
+
+.main__section:last-child .section__description {
+    border-bottom: 0;
+}

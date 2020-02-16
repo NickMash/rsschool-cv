@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="resume__container">
+        <div class="header__top-line"></div>
+        <header class="resume__header">
+            <div class="header__section">
+                <div class="header__title">MIKALAI<br>MASHYNSKI</div>
+                <p class="header__description">
+                    RS SCHOOL STUDENT
+                </p>
+                <hr class="header__bottom-line"/>
+            </div>
+            <div class="header__section">
+                <a class="header__image" href="https://www.linkedin.com/in/mikalaimashynski">
+                    <div class="header__round-moving-line"></div>
+                </a>
+            </div>
+        </header>
+        <main>
+            <div class="main__contact">
+                <div class="contact__section">
+                    <a class="contact__icon_phone" href="tel:+375293591179"></a>
+                    <span class="contact__name_phone">PHONE:</span>
+                    <a class="contact__description_phone" href="tel:+375293591179">+375 29 359 11 79</a>
+                </div>
+                <div class="contact__section">
+                    <a class="contact__icon_email" href="mailto:nicholasgrand@gmail.com"></a>
+                    <span class="contact__name_email">EMAIL:</span>
+                    <a class="contact__description_email" href="mailto:nicholasgrand@gmail.com">
+                        nicholasgrand@gmail.com
+                    </a>
+                </div>
+                <div class="contact__section">
+                    <a class="contact__icon_social" href="https://github.com/NickMash"></a>
+                    <span class="contact__name_social">GITHUB:</span>
+                    <a class="contact__description_social" href="https://github.com/NickMash">
+                        https://github.com/NickMash
+                    </a>
+                </div>
+            </div>
+            <div class="main__sections">
+                <section class="main__section section__summary">
+                    <div class="section__titles">
+                        <div class="section__icon section__icon_summary"></div>
+                        <div class="section__name">SUMMARY</div>
+                        <div class="section__arrow-pointer"></div>
+                    </div>
+                    <div class="section__description">
+                        I want to become a Front End developer.
+                        Why Front End? Because it is very interesting to me.
+                        This is both technical and, to some extent, creative work.
+                        The ability to create beautiful, technically complex sites
+                        and web applications, think through the algorithms of their
+                        work - that is my goal. In life, I am a persistent and purposeful
+                        person. If something doesn’t work out for me, I’m ready to work hard
+                        to catch up and achieve my goal. This is my motivation.
+                    </div>
+                </section>
+                <section class="main__section section__skills">
+                    <div class="section__titles">
+                        <div class="section__icon section__icon_skills"></div>
+                        <div class="section__name">SKILLS</div>
+                        <div class="section__subname">Software And <br>Professional Skills</div>
+                        <div class="section__arrow-pointer"></div>
+                    </div>
+                    <div class="section__description">
+                        <h3>I had some experience with the following technologies and tools:</h3>
+                        <ul>
+                            <li>HTML5;</li>
+                            <li>CSS;</li>
+                            <li>JS;</li>
+                            <li>ES6;</li>
+                            <li>Adobe Photoshop;</li>
+                            <li>Git;</li>
+                            <li>GitHub;</li>
+                            <li>IDE (JetBrains Webstorm);</li>
+                            <li>Chrome DevTools.</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="main__section section__code-example">
+                    <div class="section__titles">
+                        <div class="section__icon section__icon_code-example"></div>
+                        <div class="section__name">CODE<br>EXAMPLE</div>
+                        <div class="section__arrow-pointer"></div>
+                    </div>
+                    <div class="section__description">
+                        <h3>
+                            This is case-insensitive sorting of object by properties
+                            (JavaScript sort() method):
+                        </h3>
+                        <pre>
+                            <code class="js-code">
+let peopleBase = [
+    {FirstName: "John", LastName: "Jackson",},
+    {FirstName: "Jack", LastName: "anderson",},
+    {FirstName: "frodo", LastName: "Bagins",},
+    {FirstName: "Sam", LastName: "Torbins",},
+];
+
+const by = field =&gt; {
+const fieldComparison = (a, b) =&gt; {
+    let as = a[field].toLowerCase();
+    let bs = b[field].toLowerCase();
+    if (as &gt; bs) return 1;
+    if (as &lt; bs) return -1;
+    return 0;
+};
+return fieldComparison;
+};
+
+const sorted = peopleBase.sort(by("FirstName"));
+                            </code>
+                        </pre>
+                    </div>
+                </section>
+                <section class="main__section section__experience">
+                    <div class="section__titles">
+                        <div class="section__icon section__icon_experience"></div>
+                        <div class="section__name">EXPERIENCE</div>
+                        <div class="section__subname">
+                            My Experience In <br>
+                            Front End Development
+                        </div>
+                        <div class="section__arrow-pointer"></div>
+                    </div>
+                    <div class="section__description">
+                        <ul>
+                            <li>Layout of several landing pages;</li>
+                            <li>
+                                Studying information on the different sources like
+                                <a class="javascript-info" href="https://javascript.info/" target="_blank">
+                                    javascript.info
+                                </a>
+                            </li>
+                            <li>
+                                Self-training and working with JS operators, cycles, functions, arrays,
+                                objects, implementation of sorting algorithms, etc.
+                            </li>
+                            <li>Classes and training with friends who work as Front End Developers;</li>
+                            <li>Documentation and specification.</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="main__section section__education">
+                    <div class="section__titles">
+                        <div class="section__icon section__icon_education"></div>
+                        <div class="section__name">EDUCATION</div>
+                        <div class="section__arrow-pointer"></div>
+                    </div>
+                    <div class="section__description">
+                        I am a graduate of the Belarusian National Technical University of Power Plants
+                        faculty. Specialty - Power plants, qualified as power engineer. Graduated in 2013.
+                    </div>
+                </section>
+                <section class="main__section section__english">
+                    <div class="section__titles">
+                        <div class="section__icon section__icon_english"></div>
+                        <div class="section__name">ENGLISH</div>
+                        <div class="section__subname">My Language Skills</div>
+                        <div class="section__arrow-pointer"></div>
+                    </div>
+                    <div class="section__description">
+                        I am a graduate of the Belarusian National Technical University of Power Plants
+                        faculty. Specialty - Power plants, qualified as power engineer. Graduated in 2013.
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
+
